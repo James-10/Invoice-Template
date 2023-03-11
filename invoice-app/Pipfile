@@ -7,7 +7,7 @@ name = "pypi"
 fastapi = "0.68.1"
 uvicorn = "0.15.0"
 jinja2 = "3.0.2"
-pdfkit = "0.6.1"
+reportlab = "*"
 sqlalchemy = "2.0.4"
 python-multipart = "*"
 
@@ -24,3 +24,4 @@ python_full_version = "3.10.7"
 
 [scripts]
 up = "python -m entrypoint"
+docker = "sh scripts/run-docker.sh"
