@@ -1,6 +1,7 @@
 import io
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import StreamingResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib.units import inch
@@ -8,6 +9,8 @@ from reportlab.pdfgen import canvas
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
+
+app.mount('/static', StaticFiles(directory='static'), name='static')
 
 @app.get("/")
 def home(request: Request):

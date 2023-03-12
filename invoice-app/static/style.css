@@ -1,0 +1,33 @@
+
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translate(50%, 50%);
+    background-color: #0b3061;
+    padding: 20px;
+}
+
+head {
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+label {
+    color: aliceblue;
+}
+
+input[type="submit"] {
+    background-color: rgb(5, 5, 41);
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: default;
+}
