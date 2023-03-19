@@ -1,5 +1,5 @@
 # Invoice-Template
 A simple FastAPI web framework invoicing template web aplication.
 
-### Authr
+### Author
 James Ockhuis (ockhuisjames@gmail.com)
